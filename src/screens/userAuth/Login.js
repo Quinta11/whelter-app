@@ -1,8 +1,9 @@
-
 import React, { Component } from 'react';
 import {StyleSheet, Text, View, TextInput, SafeAreaView, TouchableOpacity, Alert, Button} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
+
+
 
 class Login extends Component {
     constructor(props) {
@@ -14,12 +15,16 @@ class Login extends Component {
         };
     }
 
+    
+
     onLogin() {
         const { username, password } = this.state;
-        Alert.alert('Credentials', `${username} + ${password}`);
+        //Alert.alert('Credentials', `${username} + ${password}`);
+        // Add if statement that checks if login is in database.
+        this.props.navigation.navigate('Home');
     }
     
-    render() {    
+    render() { 
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>Whelter</Text>
@@ -52,7 +57,7 @@ class Login extends Component {
                 <Button
                     title={'Register'}
                     style={styles.input}
-                    onPress={this.onLogin.bind(this)}
+                    onPress={() => this.props.navigation.navigate('SignUp')}
                 />
             </View>
         );
