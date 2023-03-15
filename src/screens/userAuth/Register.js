@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, TextInput, StatusBar, SafeAreaView, ScrollView, TouchableOpacity, Alert, Button} from 'react-native';
+import {StyleSheet, Text, View, TextInput, StatusBar, SafeAreaView, ScrollView, Alert, Button} from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
-import LinearGradient from 'react-native-linear-gradient';
-import {useNavigation} from '@react-navigation/native';
-
-
 
 class Register extends Component {
     constructor(props) {
