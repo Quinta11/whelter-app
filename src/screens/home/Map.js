@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {StyleSheet, Text, View, TextInput, SafeAreaView, TouchableOpacity, Alert, Button} from 'react-native';
 
-class HomePage extends Component {
+class Map extends Component {
     render() {
         return (
             <View>
@@ -11,4 +11,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default Map;
